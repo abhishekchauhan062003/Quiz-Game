@@ -27,19 +27,19 @@ Welcome to the Quiz Game app repository! This project allows you to create and p
 
 ## Installation
 
-### Prerequisites
+## Prerequisites
 
 - Python 3.x
 - Flask
 - Node.js and npm
 - Git
 
-### Setup
-
+## Setup
+```
 1. Clone the Repository
-   ```
-   git clone https://github.com/yourusername/quiz-game.git
    ```sh
+   git clone https://github.com/yourusername/quiz-game.git
+   ```
 2. **Navigate to the Project Directory**
    ```sh
    cd quiz-game
