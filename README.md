@@ -1,9 +1,7 @@
-Sure! Here's the code for the README template, formatted for GitHub:
-
 
 # Quiz Game
 
-Welcome to the Quiz Game app repository! This project allows you to create and play custom quiz games. Built with HTML, CSS, JavaScript, and Python Flask, it features a user-friendly interface and an API for extended functionality.
+Welcome to the Quiz Game app repository! This project allows you to play custom quiz games. Built with HTML, CSS, JavaScript, and Python Flask, it features a user-friendly interface and an API for extended functionality.
 
 ## Table of Contents
 
@@ -31,18 +29,18 @@ Welcome to the Quiz Game app repository! This project allows you to create and p
 
 - Python 3.x
 - Flask
-- Node.js and npm
+- BootStrap
 - Git
 
 ## Setup
 
 1. Clone the Repository
    ```sh
-   git clone https://github.com/yourusername/quiz-game.git
+   git clone https://github.com/abhishekchauhan062003/Quiz-Game
    ```
 2. **Navigate to the Project Directory**
    ```sh
-   cd quiz-game
+   cd Quiz-Game
    ```
 3. **Backend Setup**
    - Create a virtual environment
@@ -61,15 +59,7 @@ Welcome to the Quiz Game app repository! This project allows you to create and p
      ```sh
      pip install -r requirements.txt
      ```
-4. **Frontend Setup**
-   - Navigate to the frontend directory
-     ```sh
-     cd frontend
-     ```
-   - Install npm dependencies
-     ```sh
-     npm install
-     ```
+
 
 ### Running the App
 
@@ -77,50 +67,26 @@ Welcome to the Quiz Game app repository! This project allows you to create and p
    ```sh
    flask run
    ```
-2. **Start the Frontend Development Server**
-   ```sh
-   npm start
-   ```
+
 
 ## Usage
 
-1. **Create a New Quiz**
+1. **Create a New Account**
    - Navigate to the app in your browser
-   - Use the interface to add questions and customize your quiz
+   - Sign in with name email and password
 2. **Play a Quiz**
    - Select a quiz and start answering questions
    - Receive instant feedback and see your score at the end
+   - Compare your Score with other users
 
 ## API Documentation
 
 ### Base URL
 ```
-http://localhost:5000/api
+https://opentdb.com/
 ```
 
-### Endpoints
 
-- **GET /quizzes**
-  - Description: Retrieve a list of all quizzes
-  - Response: JSON array of quizzes
-
-- **GET /quizzes/{id}**
-  - Description: Retrieve a specific quiz by ID
-  - Response: JSON object of the quiz
-
-- **POST /quizzes**
-  - Description: Create a new quiz
-  - Request Body: JSON object with quiz details
-  - Response: JSON object of the created quiz
-
-- **PUT /quizzes/{id}**
-  - Description: Update an existing quiz by ID
-  - Request Body: JSON object with updated quiz details
-  - Response: JSON object of the updated quiz
-
-- **DELETE /quizzes/{id}**
-  - Description: Delete a specific quiz by ID
-  - Response: JSON object with a success message
 
 ## Contributing
 
@@ -138,7 +104,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-For any questions or feedback, please open an issue or contact us at [your-email@example.com](mailto:your-email@example.com).
+For any questions or feedback, please open an issue or contact us at [your-abhic062003@example.com](mailto:abhic062003@example.com).
 
 ---
 
