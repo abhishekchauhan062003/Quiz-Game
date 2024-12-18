@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game | Login</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: monospace !important;
+          }
+          .container {
+            background-color: #fff;
+            padding: 25px;
+            width: 275px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          }
+          .header {
+            text-align: center;
+            margin-bottom: 20px;
+          }
+          .header h1 {
+            font-size: 24px;
+            color: #000;
+          }
+          h1 > .l {
+            font-size: 30px;
+            color: #8c0000;
+          }
+          label {
+            font-weight: 700;
+            font-size: 16px;
+          }
+          .inp {
+            font-weight: 500;
+            width: 100%;
+            padding: 2.5px 3.75px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 2px solid #132;
+            border-top: 0;
+            border-left: 0;
+            border-right: 0;
+          }
+          .inp,
+          .inp:focus {
+            outline: none;
+          }
+          button {
+            background-color: #8c0000;
+            color: white;
+            padding: 12px 20px;
+            margin: 8px 0;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            opacity: 0.925;
+          }
+          button:hover {
+            opacity: 1;
+          }
+          .signup {
+            width: 250px;
+            padding: 0 7.5px;
+            text-align: center;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+          }
+          .signup a {
+            font-weight: 800;
+            color: #8c0000;
+            text-decoration: none;
+          }
+          .signup a:hover {
+            text-decoration: underline;
+          }
+          .hidden { display: none; }
+
+    </style>
+</head>
+
+<body>
+    {% if error %}
+    <div class="alert alert-danger" style="margin-bottom: 0px;" role="alert">
+        {{error}}
+      </div>
+    {% endif %}
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ">
+            <a class="nav-item nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#">Features</a>
+            <a class="nav-item nav-link" href="#">Pricing</a>
+            <a class="nav-item nav-link disabled" href="#">Disabled</a>
+          </div>
+        </div>
+      </nav>
+    <div class="bgc center my-5 " >
+        <div class="container hidden" id="login-form">
+          <div class="header">
+            <h1><span class="l">L</span>OGIN</h1>
+          </div>
+          <form action="/login" method="POST" >
+            <label for="uname">Username</label>
+            <input type="text" class="inp" name="uname" required>
+            <label for="psw">Password</label>
+            <input type="password" class="inp" name="psw" required>
+            <button type="submit">Enter</button>
+          </form>
+
+
+          <div class="signup">
+            <b>Don't have account?</b>
+            <a href="#" onclick="showSignUp()">Signup</a>
+          </div>
+        </div>
+        <div class="container" id="signup-form">
+
+                <div class="header">
+                  <h1><span class="l">S</span>IGN UP</h1>
+                </div>
+            <form action="/signup" method="POST">
+                <label for="uname">Username</label>
+                <input type="text" class="inp" name="uname" required>
+                <label for="email">Email</label>
+                <input type="email" class="inp" name="email" required>
+                <label for="psw">Password</label>
+                <input type="password" class="inp" name="psw" required>
+                <label for="psw2">Confirm Password</label>
+                <input type="password" class="inp" name="psw2" required>
+                <button type="submit">Enter</button>
+              </form>
+            <div class="signup">
+            <b>Already have an account?</b>
+            <a href="#" onclick="showLogin()">Login</a>
+        </div>
+    </div>
+      </div>
+<script>
+    function showSignUp() {
+        document.getElementById('login-form').classList.add('hidden');
+        document.getElementById('signup-form').classList.remove('hidden');
+    }
+
+    function showLogin() {
+        document.getElementById('login-form').classList.remove('hidden');
+        document.getElementById('signup-form').classList.add('hidden');
+    }
+
+
+
+
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+</body>
+</html>
