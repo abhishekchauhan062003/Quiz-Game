@@ -1,6 +1,6 @@
 Sure! Here's the code for the README template, formatted for GitHub:
 
-```markdown
+
 # Quiz Game
 
 Welcome to the Quiz Game app repository! This project allows you to create and play custom quiz games. Built with HTML, CSS, JavaScript, and Python Flask, it features a user-friendly interface and an API for extended functionality.
@@ -35,7 +35,7 @@ Welcome to the Quiz Game app repository! This project allows you to create and p
 - Git
 
 ## Setup
-```
+
 1. Clone the Repository
    ```sh
    git clone https://github.com/yourusername/quiz-game.git
