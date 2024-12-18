@@ -31,6 +31,7 @@ Welcome to the Quiz Game app repository! This project allows you to play custom 
 - Flask
 - BootStrap
 - Git
+- SQL lite
 
 ## Setup
 
@@ -109,4 +110,3 @@ For any questions or feedback, please open an issue or contact us at [your-abhic
 ---
 
 Thank you for checking out the Quiz Game app! We hope you find it useful and fun. Happy quizzing!
-```
