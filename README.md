@@ -105,7 +105,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-For any questions or feedback, please open an issue or contact us at [your-abhic062003@example.com](mailto:abhic062003@example.com).
+For any questions or feedback, please open an issue or contact us at [abhic062003@gmail.com](mailto:abhic062003@gmail.com).
 
 ---
 
